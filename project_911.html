@@ -1,36 +1,89 @@
 <!DOCTYPE html>
 <html>
-<head>
-	
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5SQJRYH05R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head><meta charset="utf-8" />
 
-  gtag('config', 'G-5SQJRYH05R');
-</script>
-
-	<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
 
-      <title>Mohammed Alashri Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+<title>Mohammed Alashri Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+     <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.79.0">
+    
+    
+   
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-fixed/">
+
+    
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
-
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-static/">
+<head> <link href="assets/css/navbar-top-fixed.css" rel="stylesheet"></head>
+  
 
 <style type="text/css">
+     .bg-video{
+            object-fit: contain !important; 
+    position: absolute !important;
+         width: 100% !important;
+         height:auto!important ;
+         grid-column: 1 / 2 !important;
+  grid-row: 1 / 2 !important; 
+
+    }
+    /* Style the header */
+
+
+/* Style the video */
+
+
+/* Style the logo */
+.logo {
+  grid-column: 1 / 2 !important; /* place the logo in the first column */
+  grid-row: 1 / 2 !important; /* place the logo in the first row */
+  position: relative !important; /* position the logo relative to its container */
+  top: -150px !important; /* move the logo up by 20px */
+}
+
     
+    .header-video{
+    height: 220px !important;
+         display: grid !important; /* use a grid layout */
+  grid-template-columns: 1fr !important; /* create one column */
+  grid-template-rows: 750px !important; /* create one row with a fixed height */
+  overflow: hidden !important; /* hide any overflow content */
+    }
     
+  
     <style>
+  
+     .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    
+    
         .blueSyntax {
             color: red;
         }.RedSyntax {
@@ -94,6 +147,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .ss { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Symbol */
 .highlight .il { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer.Long */
   </style>
+    <link href="navbar-top.css" rel="stylesheet">
 
 
 
@@ -14610,32 +14664,76 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     <!-- End of mathjax configuration --></head>
 <body  class="jp-Notebook " data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 
-  <div class="is-preload" style="background-color: #333;">
-       <header id="header" style="background-image: url('images/bg1.jpg');">
-            
+ 	
+         
+           <div class=" is-preload" style="background-image:url('images/bg.jpg')">
+       <header class="header-video" id="header">
+           
+            <video class="bg-video" id="bg-video" autoplay muted loop>
+		<source src="https://drive.google.com/uc?export=download&id=1iyQvDsVJF3SmlnbfaSq6Cgx-7qd5828X" type="video/mp4">
+	</video>
+           
              <h1 href="index.html" class="logo" style="  position: relative;
                           top: -20px;">911 Calls Project</h1> 
         </header>
+      
             <!-- Nav -->
-         
-          <nav id="nav" style="background-color: #333; display: flex; justify-content: center; align-items: center;width: 100%;">
-            <ul class="links">
-                <li><a href="index.html">PROJECTS</a></li>
-                <li><a href="reseme.html">My Reseme</a></li>
-               
-            </ul>
-            <ul class="icons">
-                <li><a href="https://www.linkedin.com/in/mohammed-elashry" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                <li><a href="https://www.kaggle.com/mohammed113" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
-                <li><a href="https://github.com/Mohammed-Alashri" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-            </ul>
-        </nav> 
+        <nav class="navbar navbar-expand-md navbar-light  fixed-top bg-light ">
+                  <div class="container-fluid" style="max-width: 85%;">
+                    <a class="navbar-brand active " aria-disabled="true" href="#">Mohammed Alashri</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-md-center  " id="navbarCollapse">
+                      <ul class="navbar-nav mb-2 mb-md-0  ">
+                        <li class="nav-item ">
+                          <a class="nav-link " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link " style="font-weight: bold;" aria-current="page"  href="projects.html">Projects</a>
+                        </li>
+                       
+
+
+
+
+                                <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Resume
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="resume.html">Review Resume Online</a></li>
+                            <li><a class="dropdown-item" href="Mohammed%20Alashri.pdf">Download Resume as PDF</a></li>
+                          </ul>
+                        </li> 
+
+                      </ul>
+                     <!-- <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>  -->
+                     <ul class="icons alt navbar-light navbar-nav ms-auto ">
+  <li><a href="https://www.linkedin.com/in/mohammed-elashry" class="icon brands fa-linkedin" style="color: black;"><span class="label">LinkedIn</span></a></li>
+  <li><a href="https://www.kaggle.com/mohammed113" class="icon brands fa-kaggle" style="color: black;"><span class="label">Kaggle</span></a></li>
+  <li><a href="https://github.com/Mohammed-Alashri" class="icon brands fa-github ms-auto" style="color: black;"><span class="label">GitHub</span></a></li>
+</ul>
+
+                    </div>
+
+                  </div>
+                </nav>
+
+
+
+       
+       
+       
         
 </div>
      
-     
-  <div id="wrapper">
-
+    
+  <div >
+  	
         <!-- Header 
          
         
@@ -14653,7 +14751,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
             <ul class="icons">
                 <li><a href="https://www.linkedin.com/in/mohammed-elashry" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
                 <li><a href="https://www.kaggle.com/mohammed113" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
-                <li><a href="https://github.com/Mohammed-Alashri" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="https://github.com/mohammed3523" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
             </ul>
         </nav> -->
 
@@ -17512,10 +17610,10 @@ jp-needs-light-background
            
                 
                 <section class="split contact">
-             
+           
                 <section class="alt" >
                     <h3 >Address</h3>
-                 <p>Mansurah, 35764<br />
+                <p>Mansurah, 35764<br />
                         </p>
                 </section>
                 <section>
@@ -17531,13 +17629,14 @@ jp-needs-light-background
                     <ul class="icons alt">
                         <li><a href="https://www.linkedin.com/in/mohammed-elashry" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
                         <li><a href="https://www.kaggle.com/mohammed113" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
-                        <li><a href="https://github.com/mohammed3523" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                        <li><a href="https://github.com/Mohammed-Alashri" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
                     </ul>
                 </section>
             </section>
           
             
         </footer>
+    
 </body>
 
 
