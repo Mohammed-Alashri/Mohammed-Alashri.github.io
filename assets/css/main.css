@@ -2804,6 +2804,13 @@ input, select, textarea {
 
 		}
 
+
+
+
+/* bars */
+
+
+
 /* Icons */
 
 	ul.icons {
@@ -3232,8 +3239,17 @@ input, select, textarea {
 		z-index: 1;
 		overflow: hidden;
 	}
-
-		#wrapper > .bg {
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+/*
+#wrapper > .bg {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -3247,6 +3263,9 @@ input, select, textarea {
 			background-attachment: scroll,								scroll,														scroll;
 			z-index: -1;
 		}
+
+
+*/
 
 			#wrapper > .bg.fixed {
 				position: fixed;
