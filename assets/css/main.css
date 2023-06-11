@@ -2242,6 +2242,12 @@ input, select, textarea {
 			.button.primary:hover {
 				background-color: #18bfef;
 			}
+	a:hover {
+			border-bottom-color: transparent;
+              text-decoration-line: none !important; 
+
+		}
+
 
 /* Form */
 
