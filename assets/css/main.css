@@ -166,6 +166,8 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
+              text-decoration-line: none !important; 
+
 		}
 
 	strong, b {
@@ -2242,12 +2244,6 @@ input, select, textarea {
 			.button.primary:hover {
 				background-color: #18bfef;
 			}
-	a:hover {
-			border-bottom-color: transparent;
-              text-decoration-line: none !important; 
-
-		}
-
 
 /* Form */
 
@@ -3397,6 +3393,7 @@ input, select, textarea {
 				box-shadow: inset 0 0 0 2px #18bfef;
 				color: #18bfef !important;
 			}
+
 
 			#intro input[type="submit"].primary,
 			#intro input[type="reset"].primary,
