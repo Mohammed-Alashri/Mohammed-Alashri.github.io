@@ -295,7 +295,7 @@ input, select, textarea {
 	}
 
 	a {
-		color: #212931;
+		color: #212931 ;
 		border-bottom-color: rgba(33, 41, 49, 0.5);
 	}
 
@@ -3753,7 +3753,7 @@ input, select, textarea {
 				}
 
 					#nav ul.links li.active a {
-						color: #1e252d;
+						color: #1e252d !important;
 					}
 
 						#nav ul.links li.active a:hover {
@@ -3770,12 +3770,14 @@ input, select, textarea {
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
 			margin-bottom: 0;
+            
 		}
 
 		@media screen and (max-width: 980px) {
 
 			#nav {
 				display: none;
+
 			}
 
 		}
@@ -4591,7 +4593,7 @@ input, select, textarea {
 		-webkit-overflow-scrolling: touch;
 		background: #ffffff;
 		box-shadow: none;
-		color: #212931;
+		color: #212931 !important;
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
@@ -4607,6 +4609,7 @@ input, select, textarea {
 		#navPanel .links {
 			list-style: none;
 			padding-left: 0;
+
 		}
 
 			#navPanel .links li {
@@ -4623,6 +4626,21 @@ input, select, textarea {
 					letter-spacing: 0.075em;
 					padding: 0.75rem 0;
 					text-transform: uppercase;
+                                		color: #212931 !important;
+
+				}
+
+#navPanel .icons li a {
+				
+                                		color: #212931 !important;
+
+				}
+
+
+        #navPanel .links li a:hover {
+					
+                                		color:  #18bfef !important;
+
 				}
 
 				#navPanel .links li:first-child {
