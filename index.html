@@ -37,9 +37,49 @@
 
   gtag('config', 'G-5SQJRYH05R');
 </script>
+    
+    
+    
 		<style type="text/css">
             
     
+            /* Tooltip container */
+	.icon:hover .tooltip {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	/* Tooltip text */
+	.tooltip {
+		visibility: hidden;
+		background-color: rgba(0, 0, 0, 0.8);
+		color: #fff;
+		text-align: center;
+		padding: 5px;
+		border-radius: 5px;
+		position: absolute;
+		z-index: 1;
+		bottom: 125%;
+		left: 50%;
+		margin-left: -60px;
+		opacity: 0;
+		transition: opacity 0.3s;
+	}
+
+	/* Tooltip arrow */
+	.tooltip::after {
+		content: "";
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: transparent transparent rgba(0, 0, 0, 0.8) transparent;
+	}
+            
+            
+            
  .first-section {
   background-color: white;
   height: auto;
@@ -421,20 +461,21 @@ background: linear-gradient(90deg, rgba(20,54,61,1) 0%, rgba(255,255,255,1) 82%)
 				
                 
                 
-                
-                	<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="projects.html">Projects</a></li>
-							<li><a href="resume.html">Resume</a></li>
-						</ul>
-						 <ul class="icons">
-              <li><a href="https://www.linkedin.com/in/mohammed-elashry" class="icon brands fa-linkedin" ><span class="label">LinkedIn</span></a></li>
-                     <li><a href="https://www.kaggle.com/mohammed113" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
-                     <li><a href="https://github.com/Mohammed-Alashri" class="icon brands fa-github ms-auto" ><span class="label">GitHub</span></a></li>
-                        </ul>
-					</nav>
-
+                <nav id="nav">
+	<ul class="links">
+		<li class="active"><a href="index.html">Home</a></li>
+		<li><a href="projects.html">Projects</a></li>
+            <li>
+                        <a href="resume.html" style="display: inline-block;">Resume</a>
+            <a href="Mohammed%20Alashri.pdf" download="" class="icon solid fa-download" style="display: inline-block; margin-left: 10px;" title="Download Resume as pdf"><span class="label">Download Resume</span></a>	
+	</li>
+	</ul>
+	<ul class="icons">
+		<li><a href="https://www.linkedin.com/in/mohammed-elashry" class="icon brands fa-linkedin" ><span class="label">LinkedIn</span></a></li>
+		<li><a href="https://www.kaggle.com/mohammed113" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
+		<li><a href="https://github.com/Mohammed-Alashri" class="icon brands fa-github ms-auto" ><span class="label">GitHub</span></a></li>
+	</ul>
+</nav>
 				<!-- Main -->
 					<div id="main">
                       <section class="first-section">
@@ -462,7 +503,7 @@ background: linear-gradient(90deg, rgba(20,54,61,1) 0%, rgba(255,255,255,1) 82%)
                                 <p><span style="font-size: 22px;">" </span>Welcome to my personal portfolio website! I'm a data analyst with a degree in Business Information Systems from Tanta University and practical experience gained through internships at KPMG Data Analytics Consulting, NBE and CIB. I have a strong skill set in tools and platforms including Excel, SQL, Tableau, R programming, and Python.<br>
                                 My goal is to help businesses and organizations make data-driven decisions that lead to growth and success. Whether you're looking to optimize your operations, improve your marketing strategy, or gain insights into your customers, I'm here for you. So take a look around my portfolio website, and let's connect to explore how we can cooperate together to achieve your goals.<span style="font-size: 22px;">" </span></p>
                         <div class="button-group"  >
-                          <a class="button " style="width: 190px;" href="Mohammed%20Alashri.pdf" download="" >Download Resume</a>
+                          <a class="button " style="width: 185px;" href="Mohammed%20Alashri.pdf" download="" >Download Resume</a>
                           <a href="projects.html" class="button home_buttons">Projects</a>
                              <!--<a href="mailto:john.doe@example.com" class="button">Mail Me</a> -->
                         </div>
