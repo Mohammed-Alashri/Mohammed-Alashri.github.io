@@ -37,10 +37,10 @@
 
 <style type="text/css">
  .bg-video{
-            object-fit: contain !important; 
+            object-fit: cover !important; 
     position: absolute !important;
          width: 100% !important;
-         height:auto!important ;
+         height:auto !important;
          grid-column: 1 / 2 !important;
   grid-row: 1 / 2 !important; 
 
@@ -60,7 +60,23 @@
   grid-template-columns: 1fr !important; /* create one column */
   grid-template-rows: 750px !important; /* create one row with a fixed height */
   overflow: hidden !important; /* hide any overflow content */
+
     }
+    /* Adjust the header height for small screens */
+@media (max-width: 768px) {
+  .header-video {
+    grid-template-rows: 400px !important;
+  }
+    
+    .bg-video{
+        height: 400px !important;
+    }
+    
+    .logo{
+        top:auto !important;
+    }
+}
+
     
   
      
