@@ -301,6 +301,7 @@ font-family: 'Playfair Display', serif;
              background-image: linear-gradient( to bottom , #0a181b , #0a181b, #14363d );
            color: white;
            
+           
 }
 
 .about-left {
@@ -322,26 +323,35 @@ font-family: 'Playfair Display', serif;
     padding: 1px;
 }
           #about_me  .button:hover{
-                background-color:  !important;
-                color: white !important; 
-                border: 1px solid black;
-                border-radius: 10px; 
-                text-decoration: none; 
-                background: rgb(20,54,61);
-                  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+              color: #516d91 !important;
+ background-color: #E5EDF5;
+ box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
 
-background: linear-gradient(90deg, rgba(20,54,61,1) 100%, rgba(255,255,255,1) 100%);
+            }
+          
+            
+           #about_me   .button{
+ background-color: #e0e8ef;
+ border-style: solid;
+ border-width: 2px 2px 2px 2px;
+ border-color: rgba(255, 255, 255, 0.333);
+ border-radius: 40px 40px 40px 40px;
+ transform: translate(0px, 0px) rotate(0deg);
+ transition: 0.2s;
+ box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+               margin-left: 14px;
+
 
             }
             
-           #about_me   .button{
-                background-color: white; 
-                  transition-duration: .5s !important;
-background: linear-gradient(90deg, rgba(20,54,61,1) 0%, rgba(255,255,255,1) 82%);
-
-
-
-            }
+            @media (max-width: 600px) {
+  .button {
+    width: 45%;
+      margin-top: 14px;
+    font-size: 0.7em;
+      font-weight: 900;
+  }
+}
           
 .about-left h3 {
   font-size: 24px;
@@ -388,26 +398,6 @@ background: linear-gradient(90deg, rgba(20,54,61,1) 0%, rgba(255,255,255,1) 82%)
   margin-bottom: 30px;
 }
 
-.btn-group {
-  display: flex;
-
-}
-
-.btn-group {
-  font-size: 16px;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  margin-right: 10px;
-  color: #fff;
-  cursor: pointer;
-}
-    
-            
-           
-.btn-group .button:last-child {
-  margin-right: 0;
-}
 
 .
 
@@ -429,7 +419,9 @@ background: linear-gradient(90deg, rgba(20,54,61,1) 0%, rgba(255,255,255,1) 82%)
     
     
     
-    
+            }
+            
+           
             
 		</style>
 		
@@ -471,7 +463,7 @@ background: linear-gradient(90deg, rgba(20,54,61,1) 0%, rgba(255,255,255,1) 82%)
 	</li>
 	</ul>
 	<ul class="icons">
-		<li><a href="https://www.linkedin.com/in/mohammed-alashri" class="icon brands fa-linkedin" ><span class="label">LinkedIn</span></a></li>
+		<li><a href="https://www.linkedin.com/in/mohammed-elashry" class="icon brands fa-linkedin" ><span class="label">LinkedIn</span></a></li>
 		<li><a href="https://www.kaggle.com/mohammed113" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
 		<li><a href="https://github.com/Mohammed-Alashri" class="icon brands fa-github ms-auto" ><span class="label">GitHub</span></a></li>
 	</ul>
@@ -488,12 +480,12 @@ background: linear-gradient(90deg, rgba(20,54,61,1) 0%, rgba(255,255,255,1) 82%)
                         <p>Data Analyst</p>
 
                         <ul class="icons ">
-                          <li><a href="https://www.linkedin.com/in/mohammed-alashri" class="icon brands fa-linkedin "  style="color: white;"><span class="label">LinkedIn</span></a></li>
+                          <li><a href="https://www.linkedin.com/in/mohammed-elashry" class="icon brands fa-linkedin "  style="color: white;"><span class="label">LinkedIn</span></a></li>
                           <li><a href="https://www.kaggle.com/mohammed113" class="icon brands fa-kaggle"  style="color: white;"><span class="label" >Kaggle</span></a></li>
                           <li><a href="https://github.com/mohammed3523" class="icon brands fa-github"  style="color: white;"><span class="label">GitHub</span></a></li>
                         </ul>
 
-                        <a href="mailto:mohamed.f.alashri@gmail.com" class="button" style="">Mail Me</a>
+                        <a href="mailto:mohamed.f.alashri@gmail.com" class="button" style=""> <i class="fas fa-envelope"> </i> Mail Me</a>
                         
                       </div>
 
@@ -502,10 +494,13 @@ background: linear-gradient(90deg, rgba(20,54,61,1) 0%, rgba(255,255,255,1) 82%)
                         <h2 >About Me</h2>
                                 <p><span style="font-size: 22px;">" </span>Welcome to my personal portfolio website! I'm a data analyst with a degree in Business Information Systems from Tanta University and practical experience gained through internships at KPMG Data Analytics Consulting, NBE and CIB. I have a strong skill set in tools and platforms including Excel, SQL, Tableau, R programming, and Python.<br>
                                 My goal is to help businesses and organizations make data-driven decisions that lead to growth and success. Whether you're looking to optimize your operations, improve your marketing strategy, or gain insights into your customers, I'm here for you. So take a look around my portfolio website, and let's connect to explore how we can cooperate together to achieve your goals.<span style="font-size: 22px;">" </span></p>
-                        <div class="button-group"  >
-                          <a class="button " style="width: 185px;" href="Mohammed%20Alashri.pdf" download="" >Download Resume</a>
-                          <a href="projects.html" class="button home_buttons">Projects</a>
-                             <!--<a href="mailto:john.doe@example.com" class="button">Mail Me</a> -->
+                        <div id="about_btns" class="button-group"  >
+                            <!-- <a class="resume_button " style="width: 185px;" href="Mohammed%20Alashri.pdf" download="" >Download Resume</a> -->
+                        
+<a href="Mohammed%20Alashri.pdf" download="" class="button home_buttons">
+        Resume <i class="fas fa-download"></i>
+      </a>                       <a href="projects.html" class="button home_buttons">Projects <i class="fas fa-chart-bar fa-lg"></i></a>
+                          <!--<a href="mailto:john.doe@example.com" class="button">Mail Me</a> -->
                         </div>
                       </div>
 </section>
@@ -669,7 +664,7 @@ background: linear-gradient(90deg, rgba(20,54,61,1) 0%, rgba(255,255,255,1) 82%)
                 <section>
                     <h3>Social</h3>
                     <ul class="icons alt">
-                        <li><a href="https://www.linkedin.com/in/mohammed-alashri" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/mohammed-elashry" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
                         <li><a href="https://www.kaggle.com/mohammed113" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
                         <li><a href="https://github.com/Mohammed-Alashri" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
                     </ul>
